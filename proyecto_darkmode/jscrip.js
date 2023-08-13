@@ -2,7 +2,6 @@ let darkmode = document.getElementById('darkmode');
 let text= document.querySelector('.I-AM');
 let comentario = document.getElementById('comentario');
 
-
 darkmode.onclick = () =>{
     if(darkmode.classList.contains('bx-moon')){
         darkmode.classList.replace('bx-moon','bx-sun')
@@ -38,7 +37,6 @@ function obRndo(array){
     return array[objetoRandom]
 }
 
-
 console.log(objeto)
 
 comentario.addEventListener('click', crearobjeto, obRndo);
@@ -53,4 +51,28 @@ function crearobjeto(){
     
 }
 
+let textcomentari = document.querySelector('.textcomentari');
+let comentarioCreate = document.querySelector('#comentarioCreate');
+let newComment = document.querySelector('.newComment');
 
+comentarioCreate.addEventListener('click', traerText)
+
+function traerText(){
+    let textEctractor = textcomentari.value;
+    if(textcomentari.value){
+        let div = document.createElement('div')
+        div.classList.add('commentNew');
+
+        newComment.append(div)
+
+        let p = document.createElement('p')
+        p.classList.add('textCreator');
+        p.innerHTML= textEctractor
+        console.log(textEctractor)
+
+        div.appendChild(p)
+    }else{
+        alert('texto vacio tiene que llenar la caja')
+    }
+
+}

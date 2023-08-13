@@ -156,3 +156,46 @@ p, h2{
     
 }
 
+
+.createCommentario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border: 2px solid black;
+    padding: 2rem;
+}
+
+.textcomentari{
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+#comentarioCreate{
+    font-size: 2rem;
+    padding: 1rem;
+    width: 400px;
+}
+
+.commentNew{
+    border: 2px solid black;
+    
+    padding: 1rem;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 2rem;
+    background-color: #f6f2f2;
+}
+
+.textCreator{
+    font-size: 1.7rem;
+    font-weight: 600;
+    
+}
+
+.newComment{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
