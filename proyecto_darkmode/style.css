@@ -21,7 +21,7 @@ body{
 
 .nav{
     width: 100%;
-    position: fixed;
+    
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -80,5 +80,79 @@ body.color{
     --text-color: white;
 }
 
+.intro{
+   margin: 2rem;
+}
 
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.perfil  img{
+    width: 100%;
+    border: 3px black solid;
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 22px 31px rgba(27,194,94,0.74);
+    background-color: #fae2e2;
+    
+}
+
+#comentario{
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+
+.I-AM {
+    border: 2px black solid;
+    padding: 1rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    max-width: 1400px;
+}
+
+.I-AM p{
+    font-size: 3rem;
+    text-align: center;
+    text-justify: none;
+}
+
+h2{
+    font-size: 3rem;
+    text-align: center;
+}
+
+p, h2{
+    color: var(--text-color);
+}
+
+.skill {
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.skill img{
+    max-width: 270px;
+    overflow: hidden;
+    border-radius: 30%;
+    padding: 2rem;
+    border: 2px black solid;
+    height: 140px;
+    background-color: #f6f2f2;
+    box-shadow: 0px 0px 22px 7px rgba(27,194,94,0.74);
+
+    
+    
+}
 
